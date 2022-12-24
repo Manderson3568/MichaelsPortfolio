@@ -1,0 +1,87 @@
+.navTitle {
+  font-weight: 900;
+  color: black;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+}
+.navList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navList li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+.navList li a {
+  color: slategray;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: 0.3s ease-in-out;
+}
+.navList li a:hover {
+  color: black;
+}
+.navList li a:hover::after,
+.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: black;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+#mobile {
+  display: none;
+}
+.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: slategray;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+@media screen and (max-width: 769px) {
+  nav {
+    background-color: lightgray;
+  }
+  .navList {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: 52px;
+    right: 0px;
+    width: 100%;
+    background-color: lightgray;
+    padding: 20px 0 0 0;
+  }
+  .navList.active {
+    display: flex;
+  }
+  .navList.active::after {
+    content: none;
+  }
+  #mobile {
+    display: block;
+  }
+  .navList li {
+    margin-bottom: 25px;
+  }
+  .icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
