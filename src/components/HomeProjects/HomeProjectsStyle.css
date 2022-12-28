@@ -1,0 +1,59 @@
+.HomeProjects {
+  height: 750px;
+}
+.tech {
+  height: 100px;
+  width: 100px;
+}
+.grey {
+  filter: grayscale(1);
+}
+.projects {
+  display: flex;
+  justify-content: center;
+}
+.proList {
+  width: 400px;
+}
+.project {
+  height: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.project h3 {
+  font-size: 24px;
+  line-height: 150px;
+  margin: 5px;
+}
+.proDisplay {
+  width: 800px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.proDisplay h2 {
+  font-size: 3em;
+}
+.project h3.selected {
+  font-size: 32px;
+}
+.HomeProjects h1 {
+  font-size: 80px;
+  text-align: left;
+  margin-left: 60px;
+}
+.techStack {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+}
