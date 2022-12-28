@@ -35,10 +35,10 @@ function HomeProjects() {
             This was built using Ruby on Rails with a PostgreSQL database and
             some Jquery for Dom Manipulation.
           </p>
-          <a href="#" className="button">
+          <a href="#" className="button projectButton">
             Deployed Project
           </a>
-          <a href="#" className="button">
+          <a href="#" className="button projectButton">
             Project Repo
           </a>
         </div>
@@ -58,10 +58,10 @@ function HomeProjects() {
             This was built using React for the front end, and firebase's
             authentication and firestore to act as the database.
           </p>
-          <a href="#" className="button">
+          <a href="#" className="button projectButton">
             Deployed Project
           </a>
-          <a href="#" className="button">
+          <a href="#" className="button projectButton">
             Project Repo
           </a>
         </div>
@@ -80,13 +80,13 @@ function HomeProjects() {
             This was built using Vue.js for the front end and Node.js with
             express library for the back end, and MongoDB for the database.{" "}
           </p>
-          <a href="#" className="button">
+          <a href="#" className="button projectButton">
             Deployed Project
           </a>
-          <a href="#" className="button">
+          <a href="#" className="button projectButton">
             Project Server Repo
           </a>
-          <a href="#" className="button">
+          <a href="#" className="button projectButton">
             Project Client Repo
           </a>
         </div>
@@ -268,7 +268,7 @@ function HomeProjects() {
           </div>
           <div className="proDisplay">
             {displayContent()}
-            <Link to="/projects" className="button">
+            <Link to="/projects" className="contact projectButton">
               All Projects <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </div>
