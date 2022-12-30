@@ -1,7 +1,12 @@
+import ColouredCircles from "../components/ColouredCircles";
+
 function Projects() {
   return (
     <div>
-      <h1>Projects</h1>
+      <h1>
+        <ColouredCircles />
+        Projects
+      </h1>
     </div>
   );
 }

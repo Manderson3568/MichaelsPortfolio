@@ -6,10 +6,11 @@ function Footer() {
   return (
     <div
       style={{
-        height: "200px",
+        minHeight: "200px",
         backgroundColor: "rgba(0,0,0,0.1)",
         textAlign: "center",
         position: "relative",
+        marginTop: "30px",
       }}
     >
       <div
