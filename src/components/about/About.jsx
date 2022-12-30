@@ -5,8 +5,9 @@ import dndDragon from "../../resources/images/dnd.png";
 import yoda from "../../resources/images/yoda.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import "./AboutStyle.css";
 import { Link } from "react-router-dom";
+import "./AboutStyle.css";
+
 function About() {
   const me = {
     heading: "Michael Anderson",

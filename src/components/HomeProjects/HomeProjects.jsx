@@ -15,6 +15,7 @@ import ruby from "../../resources/images/ruby.png";
 import sqlite from "../../resources/images/sqlite.png";
 import vue from "../../resources/images/vue.png";
 import "./HomeProjectsStyle.css";
+import ColouredCircles from "../ColouredCircles";
 function HomeProjects() {
   const [pokemon, setPokemon] = useState(false);
   const [trx, setTrx] = useState(false);
@@ -48,7 +49,7 @@ function HomeProjects() {
         <div>
           <h2>Trx Prescription Tracker</h2>
           <p>
-            Trx Prescription Tracker is a 3 person collaboration I completed in
+            Trx Prescription Tracker is a 3 person collaboration we completed in
             week 9 of General Assembly's Software Engineering Immersive. The
             purpose of this project was to allow users to track their current
             prescriptions, as well as log any side effects or their general
@@ -71,8 +72,8 @@ function HomeProjects() {
         <div>
           <h2>Atomic Academy</h2>
           <p>
-            Atomic Academy is a 2 person collaboration I completed in week 12 of
-            General Assmbly's Software Engineering Immerssive. The purpose of
+            Atomic Academy is a 2 person collaboration we completed in week 12
+            of General Assmbly's Software Engineering Immerssive. The purpose of
             this project was to provide an online teaching platform for the
             sciences.
           </p>
@@ -94,7 +95,7 @@ function HomeProjects() {
     } else {
       return (
         <div>
-          <h1>All Projects</h1>
+          <h2>All Projects</h2>
           <p>
             This is a sample of my 3 most recent projects. For a full list of
             all the major projects I have worked on please follow the link below
@@ -105,7 +106,10 @@ function HomeProjects() {
   }
   return (
     <div className="HomeProjects">
-      <h1>Projects</h1>
+      <h1>
+        <ColouredCircles />
+        Projects
+      </h1>
       <div className="projectSubCont">
         <div className="techStack">
           <img

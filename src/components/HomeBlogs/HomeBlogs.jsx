@@ -4,6 +4,7 @@ import "./HomeBlogsStyle.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import ColouredCircles from "../ColouredCircles";
 
 // requesting articles from hashnode API
 
@@ -40,8 +41,11 @@ function HomeBlogs() {
   if (isLoading) return "loading...";
   if (error) return error;
   return (
-    <div>
-      <h1 className="blogHeading">Blogs</h1>
+    <div className="homeBlogs">
+      <h1 className="blogHeading">
+        <ColouredCircles />
+        Blogs
+      </h1>
       <div className="blogCont">
         {data.user.publication.posts.slice(0, 4).map((post, i) => {
           return (

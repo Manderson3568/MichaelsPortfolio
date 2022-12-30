@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 import "./NavbarStyle.css";
 import { Link, NavLink } from "react-router-dom";
@@ -19,6 +20,7 @@ function Navbar() {
       <Link className="navTitle" to="/">
         Michael Anderson
       </Link>
+
       <div>
         <ul className={toggle ? "navList active" : "navList"}>
           <li>
@@ -32,6 +34,16 @@ function Navbar() {
           </li>
           <li>
             <NavLink to="/contact">Contact Me</NavLink>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/michaelandersondev/">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Manderson3568">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
           </li>
         </ul>
       </div>
