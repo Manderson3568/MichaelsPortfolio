@@ -60,3 +60,15 @@
   text-decoration: none;
   font-weight: 700;
 }
+.redSide {
+  border-left: 5px solid #e6020d;
+}
+.blueSide {
+  border-left: 5px solid #3c5aa6;
+}
+.greenSide {
+  border-left: 5px solid #32bd0a;
+}
+.project h3 {
+  margin-left: 10px;
+}

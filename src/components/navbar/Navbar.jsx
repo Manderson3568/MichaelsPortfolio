@@ -24,24 +24,35 @@ function Navbar() {
       <div>
         <ul className={toggle ? "navList active" : "navList"}>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink className={"redLine"} to="/">
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/projects">Projects</NavLink>
+            <NavLink className={"blueLine"} to="/projects">
+              Projects
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/blogs">Blogs</NavLink>
+            <NavLink className={"greenLine"} to="/blogs">
+              Blogs
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/contact">Contact Me</NavLink>
+            <NavLink className={"redLine"} to="/contact">
+              Contact Me
+            </NavLink>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/michaelandersondev/">
+            <a
+              className={"blueLine"}
+              href="https://www.linkedin.com/in/michaelandersondev/"
+            >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </li>
           <li>
-            <a href="https://github.com/Manderson3568">
+            <a className={"greenLine"} href="https://github.com/Manderson3568">
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>

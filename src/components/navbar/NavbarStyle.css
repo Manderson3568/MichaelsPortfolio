@@ -34,10 +34,21 @@ nav {
   content: "";
   width: 30%;
   height: 2px;
-  background: black;
   position: absolute;
   bottom: -4px;
   left: 20px;
+}
+.navList li a.redLine:hover::after,
+.active::after {
+  background-color: #e6020d;
+}
+.navList li a.blueLine:hover::after,
+.active::after {
+  background-color: #3c5aa6;
+}
+.navList li a.greenLine:hover::after,
+.active::after {
+  background-color: #32bd0a;
 }
 #mobile {
   display: none;

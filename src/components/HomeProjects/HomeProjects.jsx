@@ -236,36 +236,36 @@ function HomeProjects() {
         <div className="projects">
           <div className="proList">
             <div
-              className="project"
+              className="project redSide"
               onClick={() => {
                 setAtomic(true);
                 setPokemon(false);
                 setTrx(false);
               }}
             >
-              <h3 className={atomic ? "selected" : ""}>Atomic Academy</h3>
+              <h3 className={atomic ? " selected" : ""}>Atomic Academy</h3>
             </div>
             <div
-              className="project"
+              className="project blueSide"
               onClick={() => {
                 setAtomic(false);
                 setPokemon(false);
                 setTrx(true);
               }}
             >
-              <h3 className={trx ? "selected" : ""}>
+              <h3 className={trx ? " selected" : ""}>
                 Trx Prescription Tracker
               </h3>
             </div>
             <div
-              className="project"
+              className="project greenSide"
               onClick={() => {
                 setAtomic(false);
                 setPokemon(true);
                 setTrx(false);
               }}
             >
-              <h3 className={pokemon ? "selected" : ""}>
+              <h3 className={pokemon ? "  selected" : ""}>
                 Pokemon Team Builder
               </h3>
             </div>
