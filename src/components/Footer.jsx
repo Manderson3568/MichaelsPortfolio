@@ -24,14 +24,12 @@ function Footer() {
         }}
       >
         <div
-          // className="circles"
           style={{
             display: "flex",
             flexWrap: "wrap",
           }}
         >
           <div
-            // className="circle"
             style={{
               backgroundColor: "#e6020d",
               width: "20px",
@@ -41,7 +39,6 @@ function Footer() {
             }}
           ></div>
           <div
-            // className="circle"
             style={{
               backgroundColor: "#3c5aa6",
               width: "20px",
@@ -51,7 +48,6 @@ function Footer() {
             }}
           ></div>
           <div
-            // className="circle"
             style={{
               backgroundColor: "#32bd0a",
               width: "20px",
@@ -91,7 +87,13 @@ function Footer() {
         </li>
       </ul>
       <p style={{ marginTop: "40px" }}>
-        This design was inspired by <a href="#">Ahensy</a>
+        This design was inspired by{" "}
+        <a
+          target="_blank"
+          href="https://dribbble.com/shots/18719635-Ahensy-Creative-Design-Agency-Landing-Page-Website"
+        >
+          Ahensy
+        </a>
       </p>
     </div>
   );

@@ -8,38 +8,7 @@ import ColouredCircles from "../ColouredCircles";
 
 // requesting articles from hashnode API
 
-function HomeBlogs() {
-  const endpoint = "https://api.hashnode.com/";
-  const articleQuery = `
-{
-  user(username: "manderson3568"){
-    publication{
-      posts{
-        title
-        brief
-        slug
-        coverImage
-      }
-    }
-  }
-}
-`;
-  const { data, isLoading, error } = useQuery("launches", () => {
-    return axios({
-      url: endpoint,
-      method: "POST",
-      data: {
-        query: articleQuery,
-      },
-    }).then((response) => {
-      // const arr = response.data.data.user.publication.posts.slice(0, 3);
-      // console.log(arr);
-      return response.data.data;
-      // return arr;
-    });
-  });
-  if (isLoading) return "loading...";
-  if (error) return error;
+function HomeBlogs({ blogs }) {
   return (
     <div className="homeBlogs">
       <h1 className="blogHeading">
@@ -47,7 +16,7 @@ function HomeBlogs() {
         Blogs
       </h1>
       <div className="blogCont">
-        {data.user.publication.posts.slice(0, 4).map((post, i) => {
+        {blogs.map((post, i) => {
           return (
             <div key={`post${i}`} className="post">
               <h3>{post.title}</h3>
@@ -68,11 +37,6 @@ function HomeBlogs() {
             </div>
           );
         })}
-      </div>
-      <div className="centre">
-        <Link to="/blogs" className="contact">
-          All Articles <FontAwesomeIcon icon={faArrowRight} />
-        </Link>
       </div>
     </div>
   );

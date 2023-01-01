@@ -36,10 +36,18 @@ function HomeProjects() {
             This was built using Ruby on Rails with a PostgreSQL database and
             some Jquery for Dom Manipulation.
           </p>
-          <a href="#" className="button projectButton">
+          <a
+            href="https://pokemon-team-builder-dev.herokuapp.com/"
+            className="button projectButton"
+            target="_blank"
+          >
             Deployed Project
           </a>
-          <a href="#" className="button projectButton">
+          <a
+            href="https://github.com/Manderson3568/project1"
+            className="button projectButton"
+            target="_blank"
+          >
             Project Repo
           </a>
         </div>
@@ -59,10 +67,18 @@ function HomeProjects() {
             This was built using React for the front end, and firebase's
             authentication and firestore to act as the database.
           </p>
-          <a href="#" className="button projectButton">
+          <a
+            href="https://trx-auth.web.app/"
+            className="button projectButton"
+            target="_blank"
+          >
             Deployed Project
           </a>
-          <a href="#" className="button projectButton">
+          <a
+            href="https://github.com/Manderson3568/project-02-TRx"
+            className="button projectButton"
+            target="_blank"
+          >
             Project Repo
           </a>
         </div>
@@ -81,13 +97,25 @@ function HomeProjects() {
             This was built using Vue.js for the front end and Node.js with
             express library for the back end, and MongoDB for the database.{" "}
           </p>
-          <a href="#" className="button projectButton">
+          <a
+            href="https://atomic-academy.onrender.com/"
+            className="button projectButton"
+            target="_blank"
+          >
             Deployed Project
           </a>
-          <a href="#" className="button projectButton">
+          <a
+            href="https://github.com/Manderson3568/project3-server"
+            className="button projectButton"
+            target="_blank"
+          >
             Project Server Repo
           </a>
-          <a href="#" className="button projectButton">
+          <a
+            href="https://github.com/Manderson3568/project3"
+            className="button projectButton"
+            target="_blank"
+          >
             Project Client Repo
           </a>
         </div>
