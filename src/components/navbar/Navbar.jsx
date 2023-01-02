@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
+import resume from "../../resources/PDFs/MichaelAndersonResume.pdf";
 import "./NavbarStyle.css";
 import { Link, NavLink } from "react-router-dom";
 function Navbar() {
@@ -47,13 +48,30 @@ function Navbar() {
             <a
               className={"blueLine"}
               href="https://www.linkedin.com/in/michaelandersondev/"
+              target="_blank"
+              rel="noreferrer"
             >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </li>
           <li>
-            <a className={"greenLine"} href="https://github.com/Manderson3568">
+            <a
+              className={"greenLine"}
+              href="https://github.com/Manderson3568"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faGithub} />
+            </a>
+          </li>
+          <li>
+            <a
+              className={"button"}
+              href={resume}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Resume
             </a>
           </li>
         </ul>
