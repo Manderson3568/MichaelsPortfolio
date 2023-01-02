@@ -1,5 +1,3 @@
-import axios from "axios";
-import { useQuery } from "react-query";
 import "./HomeBlogsStyle.css";
 
 import ColouredCircles from "../ColouredCircles";
@@ -21,7 +19,7 @@ function HomeBlogs({ blogs }) {
               <div className="imgCont">
                 <img
                   src={post.coverImage}
-                  alt={`${post.title} cover image`}
+                  alt={`${post.title} cover`}
                   className="coverImage"
                 />
               </div>

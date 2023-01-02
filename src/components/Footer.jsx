@@ -90,6 +90,7 @@ function Footer() {
         This design was inspired by{" "}
         <a
           target="_blank"
+          rel="noreferrer"
           href="https://dribbble.com/shots/18719635-Ahensy-Creative-Design-Agency-Landing-Page-Website"
         >
           Ahensy

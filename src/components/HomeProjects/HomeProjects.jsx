@@ -41,6 +41,7 @@ function HomeProjects() {
             href="https://pokemon-team-builder-dev.herokuapp.com/"
             className="button projectButton"
             target="_blank"
+            rel="noreferrer"
           >
             Deployed Project
           </a>
@@ -48,6 +49,7 @@ function HomeProjects() {
             href="https://github.com/Manderson3568/project1"
             className="button projectButton"
             target="_blank"
+            rel="noreferrer"
           >
             Project Repo
           </a>
@@ -72,6 +74,7 @@ function HomeProjects() {
             href="https://trx-auth.web.app/"
             className="button projectButton"
             target="_blank"
+            rel="noreferrer"
           >
             Deployed Project
           </a>
@@ -79,6 +82,7 @@ function HomeProjects() {
             href="https://github.com/Manderson3568/project-02-TRx"
             className="button projectButton"
             target="_blank"
+            rel="noreferrer"
           >
             Project Repo
           </a>
@@ -102,6 +106,7 @@ function HomeProjects() {
             href="https://atomic-academy.onrender.com/"
             className="button projectButton"
             target="_blank"
+            rel="noreferrer"
           >
             Deployed Project
           </a>
@@ -109,6 +114,7 @@ function HomeProjects() {
             href="https://github.com/Manderson3568/project3-server"
             className="button projectButton"
             target="_blank"
+            rel="noreferrer"
           >
             Project Server Repo
           </a>
@@ -116,6 +122,7 @@ function HomeProjects() {
             href="https://github.com/Manderson3568/project3"
             className="button projectButton"
             target="_blank"
+            rel="noreferrer"
           >
             Project Client Repo
           </a>

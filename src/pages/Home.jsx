@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import About from "../components/about/About";
 import HomeBlogs from "../components/HomeBlogs/HomeBlogs";
 import HomeProjects from "../components/HomeProjects/HomeProjects";
@@ -7,9 +6,6 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 function Home({ blogs }) {
-  // useEffect(() => {
-  //   console.log(blogs);
-  // });
   return (
     <div>
       <About />

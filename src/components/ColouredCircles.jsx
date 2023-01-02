@@ -8,17 +8,15 @@ function ColouredCircles() {
       }}
     >
       <div
-        // className="circles"
         style={{
           display: "flex",
           flexWrap: "wrap",
-          // flexDirection: "column-reverse",
+
           width: "26px",
           height: "78px",
         }}
       >
         <div
-          // className="circle"
           style={{
             backgroundColor: "#e6020d",
             width: "20px",
@@ -28,7 +26,6 @@ function ColouredCircles() {
           }}
         ></div>
         <div
-          // className="circle"
           style={{
             backgroundColor: "#3c5aa6",
             width: "20px",
@@ -38,7 +35,6 @@ function ColouredCircles() {
           }}
         ></div>
         <div
-          // className="circle"
           style={{
             backgroundColor: "#32bd0a",
             width: "20px",
