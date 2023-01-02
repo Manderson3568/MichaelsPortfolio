@@ -1,9 +1,7 @@
 import axios from "axios";
 import { useQuery } from "react-query";
 import "./HomeBlogsStyle.css";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 import ColouredCircles from "../ColouredCircles";
 
 // requesting articles from hashnode API

@@ -6,6 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  backdrop-filter: blur(10px);
 }
 .post {
   width: 43%;

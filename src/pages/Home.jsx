@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 function Home({ blogs }) {
-  useEffect(() => {
-    console.log(blogs);
-  });
+  // useEffect(() => {
+  //   console.log(blogs);
+  // });
   return (
     <div>
       <About />

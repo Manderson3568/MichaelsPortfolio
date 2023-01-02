@@ -1,4 +1,5 @@
 import ColouredCircles from "./ColouredCircles";
+import roro from "../resources/images/roro.png";
 
 function SpeakingEvents() {
   const speaking = [
@@ -7,7 +8,7 @@ function SpeakingEvents() {
       event: "Roro",
       title: "Exorcism",
       link: "#",
-      image: "",
+      image: roro,
     },
   ];
   return (
@@ -55,7 +56,7 @@ function SpeakingEvents() {
                     width: "48%",
                   }}
                 >
-                  {event.img}
+                  <img src={event.image} alt="Roro photos" />
                 </td>
               </tr>
             );

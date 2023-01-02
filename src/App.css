@@ -4,8 +4,16 @@
   max-width: 1080px;
   margin: 0 auto;
 } */
+/* .app {
+  background-color: lightgray;
+  background-image: url("./resources/images/background.png");
+  background-repeat: none;
+  background-size: auto;
+} */
 body {
   background-color: lightgray;
+  background-image: url("./resources/images/background.png");
+  background-repeat: no-repeat;
 }
 * {
   box-sizing: border-box;

@@ -9,7 +9,7 @@ function Projects() {
         Projects
       </h1> */}
       <HomeProjects />
-      <p style={{ textAling: "center" }}>More projects coming soon... </p>
+      {/* <p style={{ textAling: "center" }}>More projects coming soon... </p> */}
     </div>
   );
 }

@@ -16,6 +16,7 @@ import sqlite from "../../resources/images/sqlite.png";
 import vue from "../../resources/images/vue.png";
 import "./HomeProjectsStyle.css";
 import ColouredCircles from "../ColouredCircles";
+
 function HomeProjects() {
   const [pokemon, setPokemon] = useState(false);
   const [trx, setTrx] = useState(false);
@@ -264,7 +265,7 @@ function HomeProjects() {
         <div className="projects">
           <div className="proList">
             <div
-              className="project redSide"
+              className={`project redSide atomic ${atomic ? " " : "grey"}`}
               onClick={() => {
                 setAtomic(true);
                 setPokemon(false);
@@ -274,7 +275,7 @@ function HomeProjects() {
               <h3 className={atomic ? " selected" : ""}>Atomic Academy</h3>
             </div>
             <div
-              className="project blueSide"
+              className={`project blueSide trx ${trx ? " " : "grey"}`}
               onClick={() => {
                 setAtomic(false);
                 setPokemon(false);
@@ -286,7 +287,7 @@ function HomeProjects() {
               </h3>
             </div>
             <div
-              className="project greenSide"
+              className={`project greenSide pokemon ${pokemon ? " " : "grey"}`}
               onClick={() => {
                 setAtomic(false);
                 setPokemon(true);
