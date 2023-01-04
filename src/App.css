@@ -13,7 +13,9 @@
 body {
   background-color: lightgray;
   background-image: url("./resources/images/background.png");
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: top center;
 }
 * {
   box-sizing: border-box;
