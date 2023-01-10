@@ -7,8 +7,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import "./AboutStyle.css";
+import PhotoCircle from "../PhotoCircle/PhotoCircle";
 
 function About() {
+  const setPokemon = () => {
+    setTopic(pokemon);
+  };
+  const setDnd = () => {
+    setTopic(dnd);
+  };
+  const setStarWars = () => {
+    setTopic(starWars);
+  };
+  const setMe = () => {
+    setTopic(me);
+  };
   const me = {
     heading: "Michael Anderson",
     content:
@@ -43,7 +56,16 @@ function About() {
           Get in Touch <FontAwesomeIcon icon={faArrowRight} />
         </Link>
       </div>
-      <div className="right aboutBox">
+      <div className="right">
+        <PhotoCircle
+          blueFunction={setPokemon}
+          redFunction={setDnd}
+          greenFunction={setStarWars}
+          resetFunction={setMe}
+          image={aboutTopic.image}
+        />
+      </div>
+      {/* <div className="right aboutBox">
         <div className="circle4"></div>
         <div
           className="color blue"
@@ -74,7 +96,7 @@ function About() {
             }}
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

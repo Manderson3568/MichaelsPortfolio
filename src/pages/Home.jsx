@@ -17,7 +17,6 @@ function Home({ blogs }) {
         </Link>
       </div>
       <SpeakingEvents />
-      <About />
     </div>
   );
 }
