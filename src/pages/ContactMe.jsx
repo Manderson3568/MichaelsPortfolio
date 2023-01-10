@@ -1,5 +1,7 @@
 import ColouredCircles from "../components/ColouredCircles.jsx";
 import ContactForm from "../components/ContactForm/ContactForm.jsx";
+import PhotoCircle from "../components/PhotoCircle/PhotoCircle";
+import headShot from "../resources/images/Michael_300_3.jpg";
 
 function ContactMe() {
   return (
@@ -8,7 +10,14 @@ function ContactMe() {
         <ColouredCircles />
         Contact Me
       </h1>
-      <ContactForm />
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
+        <div className="left">
+          <PhotoCircle image={headShot} />
+        </div>
+        <div className="right">
+          <ContactForm />
+        </div>
+      </div>
     </div>
   );
 }

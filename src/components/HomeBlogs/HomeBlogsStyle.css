@@ -9,12 +9,14 @@
   backdrop-filter: blur(10px);
 }
 .post {
-  width: 43%;
+  min-width: 600px;
+  width: 48%;
   position: relative;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   overflow: hidden;
   margin: 10px;
+  min-height: 350px;
 }
 .coverImage {
   width: 100%;
@@ -49,7 +51,7 @@
 .blogHeading {
   font-size: 80px;
   text-align: left;
-  padding-left: 120px;
+  /* padding-left: 120px; */
 }
 .centre {
   text-align: center;

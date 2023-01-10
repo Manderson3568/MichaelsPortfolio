@@ -24,3 +24,9 @@ div.App {
   max-width: 1300px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 1145px) {
+  body {
+    background-image: none;
+  }
+}

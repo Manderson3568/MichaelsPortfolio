@@ -1,5 +1,5 @@
 .HomeProjects {
-  height: 750px;
+  min-height: 750px;
 }
 .tech {
   height: 100px;
@@ -11,6 +11,7 @@
 .projects {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   backdrop-filter: blur(10px);
 }
 .proList {
@@ -40,11 +41,11 @@
 .HomeProjects h1 {
   font-size: 80px;
   text-align: left;
-  margin-left: 60px;
 }
 .techStack {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .button {
   display: inline-block;

@@ -13,56 +13,61 @@ function SpeakingEvents() {
   ];
   return (
     <div>
-      <h1 style={{ paddingLeft: "120px" }}>
+      <h1>
         <ColouredCircles /> Speaking Events
       </h1>
-      <table style={{ width: "90%", margin: "0 auto" }}>
-        <tbody>
-          {speaking.map((event, i) => {
-            return (
-              <tr
-                key={`speaking ${i}`}
-                style={{
-                  backgroundColor: "rgba(255, 255, 255, 0.1)",
-                  height: "120px",
-                  textAlign: "center",
-                  fontSize: "32px",
-                }}
-              >
-                <td
-                  style={{
-                    margin: 0,
-                    width: "20%",
-                  }}
-                >
-                  {event.date}
-                </td>
-                <td
-                  style={{
-                    margin: 0,
-                    width: "30%",
-                  }}
-                >
-                  <a href={event.link} style={{ color: "black" }}>
-                    {event.event}
-                  </a>
-                  <span style={{ color: "gray", display: "block" }}>
-                    {event.title}
-                  </span>
-                </td>
-                <td
-                  style={{
-                    margin: 0,
-                    width: "48%",
-                  }}
-                >
-                  <img src={event.image} alt="Roro photos" />
-                </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+      {/* <table style={{ width: "90%", margin: "0 auto", overflow: "hidden" }}>
+        <tbody> */}
+      {speaking.map((event, i) => {
+        return (
+          <div
+            key={`speaking ${i}`}
+            style={{
+              backgroundColor: "rgba(255, 255, 255, 0.1)",
+              textAlign: "center",
+              fontSize: "32px",
+              display: "flex",
+            }}
+          >
+            <div
+              style={{
+                margin: 0,
+                width: "20%",
+                display: "table",
+              }}
+            >
+              <p style={{ display: "table-cell", verticalAlign: "middle" }}>
+                {event.date}
+              </p>
+            </div>
+            <div
+              style={{
+                margin: 0,
+                width: "30%",
+                display: "table",
+              }}
+            >
+              <p style={{ display: "table-cell", verticalAlign: "middle" }}>
+                <a href={event.link} style={{ color: "black" }}>
+                  {event.event}
+                </a>{" "}
+                <span style={{ color: "gray" }}>{event.title}</span>
+              </p>
+            </div>
+            <div
+              style={{
+                margin: 0,
+                width: "48%",
+                overflow: "hidden",
+              }}
+            >
+              <img src={event.image} alt="Roro photos" />
+            </div>
+          </div>
+        );
+      })}
+      {/* </tbody>
+      </table> */}
     </div>
   );
 }
